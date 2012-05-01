@@ -74,6 +74,8 @@
           
           <div class="page-header">
             <h1>Get started with your Spring MVC and Hibernate Application</h1>
+            
+            <p><a href="/tww/">The WorldWalkers</a></p>
           </div>
           
           <div style="margin-bottom: 20px">

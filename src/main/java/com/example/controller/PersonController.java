@@ -25,6 +25,7 @@ public class PersonController {
         map.put("person", new Person());
         map.put("peopleList", personService.listPeople());
 
+        System.out.println("Hello");
         return "people";
     }
 
