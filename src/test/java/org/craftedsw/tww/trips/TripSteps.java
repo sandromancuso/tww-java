@@ -24,7 +24,7 @@ public class TripSteps {
 
 	@Given("^I am on the front page$")
 	public void I_am_on_the_front_page() {
-		driver.get("http://localhost:8080/tww");
+		driver.get("http://localhost:8080/alltrips/");
 	}
 
 	@When("^I decide to see all existing trips$")
@@ -34,8 +34,7 @@ public class TripSteps {
 
 	@Then("^I should see a list of all trips$")
 	public void I_should_see_a_list_of_all_trips() {
-//		System.out.println("Page title is: " + driver.getTitle());
-		assertThat(pageTitle, is("The WorldWalkers"));
+		assertThat(pageTitle, is("The WorldWalkers - All Trips"));
 	}
 	
 	@After 

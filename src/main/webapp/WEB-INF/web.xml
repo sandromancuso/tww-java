@@ -23,9 +23,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>spring</servlet-name>
-        <!-- 
-        <url-pattern>/tww/*</url-pattern>
-         -->
+        <url-pattern>/alltrips/*</url-pattern>
         <url-pattern>/people/*</url-pattern>
     </servlet-mapping>
 </web-app>

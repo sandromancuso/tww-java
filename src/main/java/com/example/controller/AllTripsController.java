@@ -6,12 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/tww")
-public class TWWController {
+//@RequestMapping("/alltrips")
+public class AllTripsController {
 	
 	@RequestMapping(value = "/", method = GET)
-	public void displayHomePage() {
-		System.out.println("Home page");
+	public void displayAllTrips() {
+		System.out.println("All trips");
 	}
 	
 	@RequestMapping(value="/anotherpage", method = GET)
