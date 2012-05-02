@@ -12,3 +12,9 @@ Then run it with:
 
     $java -jar target/dependency/webapp-runner.jar target/*.war
 
+Deploy on heroku:
+
+    $git push heroku master
+
+Push to github
+    $git push -u origin master
