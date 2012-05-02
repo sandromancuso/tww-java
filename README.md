@@ -17,6 +17,7 @@ Deploy on heroku:
     $git push heroku master
 
 Push to github:
+
     $git push -u origin master
 
 I hope to be doing something with it when I have some time.
