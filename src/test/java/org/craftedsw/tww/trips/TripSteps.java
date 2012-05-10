@@ -24,7 +24,7 @@ public class TripSteps {
 
 	@Given("^I am on the front page$")
 	public void I_am_on_the_front_page() {
-		driver.get("http://localhost:8080/alltrips/");
+		driver.get("http://localhost:8080/alltrips");
 	}
 
 	@When("^I decide to see all existing trips$")

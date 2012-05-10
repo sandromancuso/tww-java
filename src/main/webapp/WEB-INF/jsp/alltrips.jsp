@@ -1,6 +1,6 @@
 <html>
 	<head>
-    	<title>The WorldWalkers</title>
+    	<title>The WorldWalkers - All Trips</title>
 	</head>
     <body>
         <p>Hello WorldWalker.</p>

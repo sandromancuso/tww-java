@@ -6,10 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-//@RequestMapping("/alltrips")
+@RequestMapping("/alltrips")
 public class AllTripsController {
 	
-	@RequestMapping(value = "/", method = GET)
+	@RequestMapping(method = GET)
 	public void displayAllTrips() {
 		System.out.println("All trips");
 	}

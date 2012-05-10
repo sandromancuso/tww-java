@@ -24,6 +24,8 @@
     <servlet-mapping>
         <servlet-name>spring</servlet-name>
         <url-pattern>/alltrips/*</url-pattern>
+        <!-- 
         <url-pattern>/people/*</url-pattern>
+         -->
     </servlet-mapping>
 </web-app>
