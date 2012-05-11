@@ -37,6 +37,21 @@ public class TripSteps {
 		assertThat(pageTitle, is("The WorldWalkers - All Trips"));
 	}
 	
+	@Given("^I am on the all trips page$")
+	public void I_am_on_the_all_trips_page() {
+		driver.get("http://localhost:8080/alltrips/anotherpage");
+	}
+
+	@When("^I decide to see another page$")
+	public void I_decide_to_see_another_page() {
+		pageTitle = driver.getTitle();
+	}
+
+	@Then("^I should see another page$")
+	public void I_should_see_another_page() {
+		assertThat(pageTitle, is("Another page"));
+	}	
+	
 	@After 
 	public void tearDown() {
 		driver.quit();

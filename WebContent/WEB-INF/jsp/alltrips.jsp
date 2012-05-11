@@ -4,7 +4,6 @@
 	</head>
     <body>
         <p>Hello WorldWalker</p>
-        <p><a href="/">Home</a> </p>
         <p><a href="/alltrips/anotherpage">Another page</a> </p>
     </body>
 </html>

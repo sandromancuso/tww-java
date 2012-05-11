@@ -10,13 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AllTripsController {
 	
 	@RequestMapping(method = GET)
-	public void displayAllTrips() {
+	public String displayAllTrips() {
 		System.out.println("All trips");
+		return "alltrips";
 	}
 	
-	@RequestMapping(value="/anotherpage", method = GET)
-	public void anotherPage() {
+	@RequestMapping(value="/anotherpage") 
+	public String anotherPage() {
 		System.out.println("Another page");
+		return "anotherpage";
 	}
 
 }

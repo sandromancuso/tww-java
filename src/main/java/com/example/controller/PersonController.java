@@ -13,19 +13,19 @@ import com.example.service.PersonService;
 
 import java.util.Map;
 
-//@Controller
+@Controller
 public class PersonController {
 
     @Autowired
     private PersonService personService;
 
-    //@RequestMapping("/")
+    @RequestMapping("/people")
     public String listPeople(Map<String, Object> map) {
 
         map.put("person", new Person());
         map.put("peopleList", personService.listPeople());
 
-        System.out.println("Hello");
+        System.out.println("people");
         return "people";
     }
 
