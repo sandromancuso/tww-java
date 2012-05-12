@@ -1,4 +1,4 @@
-package org.craftedsw.tww.trips;
+package system.org.craftedsw.tww.trips;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
