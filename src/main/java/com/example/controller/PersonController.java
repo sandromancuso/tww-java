@@ -16,7 +16,7 @@ import java.util.Map;
 @Controller
 public class PersonController {
 
-    @Autowired
+//    @Autowired
     private PersonService personService;
 
     @RequestMapping("/people")

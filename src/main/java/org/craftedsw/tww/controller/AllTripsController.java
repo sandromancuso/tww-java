@@ -1,4 +1,4 @@
-package com.example.controller;
+package org.craftedsw.tww.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 

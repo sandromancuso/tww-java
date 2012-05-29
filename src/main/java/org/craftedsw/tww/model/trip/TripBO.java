@@ -1,12 +1,26 @@
 package org.craftedsw.tww.model.trip;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TripBO {
 
-	public void create(Trip trip) {
-		
+	@Autowired
+	private TripRepository tripRepository;
+
+	public Trip create(Trip trip) {
+		return tripRepository.create(trip);
+	}
+
+	public void set(TripRepository tripRepository) {
+		this.tripRepository = tripRepository;
+	}
+
+	public List<Trip> findAllTrips() {
+		return null;
 	}
 
 }

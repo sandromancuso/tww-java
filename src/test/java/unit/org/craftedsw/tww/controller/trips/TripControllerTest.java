@@ -6,6 +6,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.verify;
 
+import org.craftedsw.tww.controller.TripsController;
 import org.craftedsw.tww.model.trip.Trip;
 import org.craftedsw.tww.model.trip.TripBO;
 import org.junit.Before;
@@ -15,7 +16,6 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.validation.BindingResult;
 
-import com.example.controller.TripsController;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TripControllerTest {

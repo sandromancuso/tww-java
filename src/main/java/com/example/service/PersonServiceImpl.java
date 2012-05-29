@@ -12,31 +12,31 @@ import javax.persistence.criteria.Root;
 
 import java.util.List;
 
-@Service
-public class PersonServiceImpl implements PersonService {
+//@Service
+public abstract class PersonServiceImpl implements PersonService {
 
-    @PersistenceContext
-    EntityManager em;
-        
-    @Transactional
-    public void addPerson(Person person) {
-        em.persist(person);
-    }
-
-    @Transactional
-    public List<Person> listPeople() {
-        CriteriaQuery<Person> c = em.getCriteriaBuilder().createQuery(Person.class);
-        Root<Person> from = c.from(Person.class);
-        c.orderBy(em.getCriteriaBuilder().asc(from.get("lastName")));
-        return em.createQuery(c).getResultList();
-    }
-
-    @Transactional
-    public void removePerson(Integer id) {
-        Person person = em.find(Person.class, id);
-        if (null != person) {
-            em.remove(person);
-        }
-    }
+//    @PersistenceContext
+//    EntityManager em;
+//        
+//    @Transactional
+//    public void addPerson(Person person) {
+//        em.persist(person);
+//    }
+//
+//    @Transactional
+//    public List<Person> listPeople() {
+//        CriteriaQuery<Person> c = em.getCriteriaBuilder().createQuery(Person.class);
+//        Root<Person> from = c.from(Person.class);
+//        c.orderBy(em.getCriteriaBuilder().asc(from.get("lastName")));
+//        return em.createQuery(c).getResultList();
+//    }
+//
+//    @Transactional
+//    public void removePerson(Integer id) {
+//        Person person = em.find(Person.class, id);
+//        if (null != person) {
+//            em.remove(person);
+//        }
+//    }
     
 }

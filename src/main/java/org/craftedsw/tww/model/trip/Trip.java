@@ -1,5 +1,10 @@
 package org.craftedsw.tww.model.trip;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Trip {
 
 	private int id;
@@ -13,6 +18,7 @@ public class Trip {
 		this.name = name;
 	}
 	
+	@Id @GeneratedValue
 	public int getId() {
 		return id;
 	}

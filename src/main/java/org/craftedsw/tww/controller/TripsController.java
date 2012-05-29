@@ -1,4 +1,4 @@
-package com.example.controller;
+package org.craftedsw.tww.controller;
 
 import static org.craftedsw.tww.view.View.ADD_TRIP_PAGE;
 import static org.craftedsw.tww.view.View.REDIRECT_TO_ALL_TRIPS_PAGE;
