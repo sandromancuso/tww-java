@@ -2,9 +2,8 @@ package unit.org.craftedsw.tww.infrastructure.repositories;
 
 import static org.craftedsw.tww.matchers.BeanHas.has;
 import static org.craftedsw.tww.matchers.BeanProperty.property;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.greaterThan;
-import static org.junit.Assert.assertThat;
 
 import org.craftedsw.tww.infrastructure.JpaTripRepository;
 import org.craftedsw.tww.model.trip.Trip;
@@ -33,8 +32,8 @@ public class JpaTripRepositoryTest extends AbstractTransactionalJUnit4SpringCont
 		Trip createdTrip = tripRepository.create(trip);
 		
 		assertThat(createdTrip, has(
-									property("id", greaterThan(0)),
-									property("name", equalTo("Italydsd")),
+									property("id", equalTo(1)),
+									property("name", equalTo("Italy")),
 									property("description", equalTo("Family holidays"))));
 	}
 	
