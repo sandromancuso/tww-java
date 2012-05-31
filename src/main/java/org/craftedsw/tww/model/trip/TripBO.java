@@ -19,8 +19,8 @@ public class TripBO {
 		this.tripRepository = tripRepository;
 	}
 
-	public List<Trip> findAllTrips() {
-		return null;
+	public List<Trip> getAllTrips() {
+		return tripRepository.findAllTrips();
 	}
 
 }

@@ -1,9 +1,13 @@
 package unit.org.craftedsw.tww.model.trips;
 
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.craftedsw.tww.model.trip.Trip;
 import org.craftedsw.tww.model.trip.TripBO;
@@ -36,6 +40,16 @@ public class TripBOTest {
 		Trip resultTrip = tripBO.create(new Trip("Holidays in UK"));
 		
 		assertThat(resultTrip, is(createdTrip));
+	}
+	
+	@Test public void
+	should_return_a_list_of_all_trips() {
+		List<Trip> tripList = new ArrayList<Trip>();
+		when(tripRepository.findAllTrips()).thenReturn(tripList);
+		
+		List<Trip> allTrips = tripBO.getAllTrips();
+		
+		assertThat(allTrips, is(equalTo(tripList)));
 	}
 
 }

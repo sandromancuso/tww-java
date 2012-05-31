@@ -1,5 +1,9 @@
 package org.craftedsw.tww.infrastructure;
 
+import static org.craftedsw.tww.model.trip.Trip.ALL_TRIPS_QUERY;
+
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -17,6 +21,12 @@ public class JpaTripRepository implements TripRepository {
 	public Trip create(Trip trip) {
 		em.persist(trip);
 		return trip;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Trip> findAllTrips() {
+		return em.createNamedQuery(ALL_TRIPS_QUERY).getResultList();
 	}
 
 }
